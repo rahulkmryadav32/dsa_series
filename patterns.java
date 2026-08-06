@@ -12,15 +12,15 @@ public class patterns {
         }
 
         // (pattern 2: Solid Rectangle pattern)
-        System.out.println("Pattern 2: Solid Rectangle pattern");
-        int rows = 3;
-        int cols = 5;
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
+        // System.out.println("Pattern 2: Solid Rectangle pattern");
+        // int rows = 3;
+        // int cols = 5;
+        // for (int i = 0; i < rows; i++) {
+        //     for (int j = 0; j < cols; j++) {
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
 
         // (pattern 3:Right-angled triangle pattern)
         System.out.println("pattern 3: Right-angled triangle pattern");
@@ -135,13 +135,12 @@ public class patterns {
             System.out.println();
         }
 
-
         // (pattern 12: Hollow star Triangle pattern)
         System.out.println("pattern 12: Hollow star Triangle pattern");
-        int x = 10;
-        for(int i=1; i<=x; i++) {
-            for(int j=1; j<=i; j++) {
-                if(i==x || j==1 || j==i) {
+        int x = 4;
+        for (int i = 1; i <= x; i++) {
+            for (int j = 1; j <= i; j++) {
+                if (i == x || j == 1 || j == i) {
                     System.out.print("* ");
                 } else {
                     System.out.print("  "); // two spaces
@@ -150,22 +149,160 @@ public class patterns {
             System.out.println();
         }
 
-
         // (pattern 13: Hollow star Pyramid pattern)
         System.out.println("pattern 13: Hollow star Pyramid pattern");
-        int y =5;
-        for(int i=1; i<=y; i++) {
-            for(int j=1; j<=y-i; j++) {
+        int y = 5;
+        for (int i = 1; i <= y; i++) {
+            for (int j = 1; j <= y - i; j++) {
                 System.out.print("  "); // two spaces
             }
-            for(int j=1; j<=2*i-1; j++) {
-                if(i==y || j==1 || j==2*i-1) {
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                if (i == y || j == 1 || j == 2 * i - 1) {
                     System.out.print("* ");
                 } else {
                     System.out.print("  "); // two spaces
                 }
             }
-            System.out.println(); 
+            System.out.println();
         }
-    } 
+
+        // (pattern 14: Solid Diamond pattern)
+        System.out.println("pattern 14: Solid Diamond pattern");
+        int z = 4;
+        for (int i = 1; i <= z; i++) {
+            for (int j = 1; j <= z - i; j++) {
+                System.out.print("  "); // two spaces
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = z - 1; i >= 1; i--) {
+            for (int j = 1; j <= z - i; j++) {
+                System.out.print("  "); // two spaces
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        // (pattern 15: Hollow Diamond pattern)
+        System.out.println("pattern 15: Hollow Diamond pattern");
+        int a = 4;
+        for (int i = 1; i <= a; i++) {
+            for (int j = 1; j <= a - i; j++) {
+                System.out.print("  "); // two spaces
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                if (j == 1 || j == 2 * i - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  "); // two spaces
+                }
+            }
+            System.out.println();
+        }
+        for (int i = a - 1; i >= 1; i--) {
+            for (int j = 1; j <= a - i; j++) {
+                System.out.print("  "); // two spaces
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                if (j == 1 || j == 2 * i - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  "); // two spaces
+                }
+            }
+            System.out.println();
+        }
+
+        // (pattern 16: )
+        System.out.println("pattern 16: ");
+        // part 1
+        int b = 4;
+        for (int i = 1; i <= b; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+
+            // part 2
+            for (int j = 1; j <= 2 * (b - i); j++) {
+                System.out.print("  "); // two spaces
+            }
+
+            // part 3
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        // part 4
+        for (int i = b; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            // part 5
+            for (int j = 1; j <= 2 * (b - i); j++) {
+                System.out.print("  "); // two spaces
+            }
+            // part 6
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        // Numberic Pattens
+        System.out.println("Numberic Pattens 1: Number Triangle");
+        int c = 5;
+        for (int i = 1; i <= c; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+
+        // numberic pattern 2
+        System.out.println("Numberic Patterns 2: ");
+        int d = 5;
+        int count = 1;
+        for (int i = 1; i <= d; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(count + " ");
+                count++;
+            }
+            System.out.println();
+        }
+
+        // Alphabetic pattern 3
+        // System.out.println("Alphabetic pattern 3: "); 
+        // int e = 5;
+        // for (int i = 1; i <= e; i++) {
+        // for (int j = 1; j <= i; j++) {
+        // int Cola = j;
+        // int Colb = ('A' - 1);
+        // int ans = Cola + Colb;
+        // char finalresult = (char) ans;
+        // System.out.print(finalresult + " ");
+        // }
+        // System.out.println();
+        // }
+
+        // Alphabetic pattern: 3
+        System.out.println("Alphabetic Pattern: ");
+        int e = 5;
+        for (int i = 1; i <= e; i++) {
+            for (int j = 1; j <= i; j++) {
+                int cola = e - j;
+                int colb = 'A';
+                int ans = cola + colb;
+                char finalAns = (char) ans;
+                System.out.print(finalAns + " ");
+            }
+            System.out.println();
+        }
+
+    }
 }
